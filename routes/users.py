@@ -3,7 +3,7 @@
 from fastapi import APIRouter, HTTPException
 from pydantic import BaseModel
 
-# Inicia el server: uvicorn users:router --reload
+# Inicia el server: python -m uvicorn basicauthuser:app --reload
 
 router = APIRouter(tags={"user"},
                    responses= {404: { "message": "No encontrado" }})
